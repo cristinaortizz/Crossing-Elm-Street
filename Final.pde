@@ -114,7 +114,7 @@ void gameOver() {
 }
 
 void keyPressed() {
-  if (mode == 1 || mode == 2 || mode == 3) {
+  if (p.win() == false && (mode == 1 || mode == 2 || mode == 3)) {
     if (keyCode == UP) p.moveUp(size);
     else if (keyCode == DOWN) p.moveDown(size);
     else if (keyCode == LEFT) p.moveLeft(size);
